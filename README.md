@@ -18,6 +18,8 @@ Go to [https://gldash.analogic.al](https://gldash.analogic.al) and add the `gld-
 }
 ```
 
+Add your projects using `username/repository-name` format.
+
 ## FAQ
 
 ### Is this secure?
