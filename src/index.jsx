@@ -1,7 +1,8 @@
 import React from "react";
 import { render } from "react-dom";
+import { Global } from "@emotion/core";
+import reset from "./lib/reset";
 import useConfig from "./lib/effects/config";
-
 import Box from "./components/Box";
 import Project from "./components/Project";
 
@@ -10,6 +11,7 @@ const App = () => {
 
   return (
     <Box grid gap={10} p={10}>
+      <Global styles={reset} />
       {loading && <h2>Loading config</h2>}
       {error && <h2>There was an error loading the config</h2>}
       {!!projects.length && (
