@@ -4,11 +4,11 @@
   "description": "GitLab Jobs dashboard",
   "main": "",
   "scripts": {
-    "start": "parcel src/index.js",
-    "build": "parcel build src/index.js",
-    "now-build": "parcel build src/index.js",
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "now-build": "parcel build src/index.html",
     "release": "npx semantic-release",
-    "format": "npx prettier --write **/*.{js,jsx,md,json}"
+    "format": "npx prettier --write **/*.{js,jsx,md,json,html}"
   },
   "keywords": [
     "gitlab",
