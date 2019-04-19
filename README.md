@@ -18,6 +18,8 @@ Go to [https://gldash.analogic.al](https://gldash.analogic.al) and add the `gld-
 }
 ```
 
+Add your projects using `username/repository-name` format.
+
 ## FAQ
 
 ### Is this secure?
@@ -27,6 +29,13 @@ Your key is stored in your browser, we never read it.
 ### Does it works with GitLab Enterprise?
 
 Yes.
+
+## @todo
+
+- [x] Release initial version
+- [ ] Better error handling
+- [ ] Configuration page to change settings
+- [ ] Testing
 
 ## Contributing
 

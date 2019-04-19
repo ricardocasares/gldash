@@ -4,11 +4,11 @@
   "description": "GitLab Jobs dashboard",
   "main": "",
   "scripts": {
-    "start": "parcel src/index.js",
-    "build": "parcel build src/index.js",
-    "now-build": "parcel build src/index.js",
-    "release": "npx semantic-release",
-    "format": "npx prettier --write **/*.{js,jsx,md,json}"
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "now-build": "parcel build src/index.html",
+    "release": "npx semantic-release@beta",
+    "format": "npx prettier --write **/*.{js,jsx,md,json,html}"
   },
   "keywords": [
     "gitlab",
@@ -30,8 +30,11 @@
     "s-ago": "^2.0.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
     "husky": "^1.3.1",
-    "lint-staged": "^8.1.0"
+    "lint-staged": "^8.1.0",
+    "parcel-bundler": "^1.12.3"
   },
   "babel": {
     "presets": [

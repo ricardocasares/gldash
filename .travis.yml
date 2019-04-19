@@ -8,11 +8,12 @@ cache:
     - "node_modules"
 
 install:
+  - npm -v
+  - node -v
   - npm ci
 
 script:
-  - npm -v
-  - node -v
+  - npm run build
 
 deploy:
   - provider: script
