@@ -39,9 +39,9 @@ type StyledBoxProps = BoxProps & {
   status: string;
 };
 
-const StyledBox = styled(Box)`
+const StyledBox = styled(Box)<StyledBoxProps>`
   color: white;
-  background: ${({ status }: StyledBoxProps) => colors[status]};
+  background: ${({ status }) => colors[status]};
   background-size: 300% 300%;
   grid-template-columns: 1fr auto;
   animation: ${frames} 10s linear infinite;

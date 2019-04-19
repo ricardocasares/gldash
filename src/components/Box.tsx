@@ -1,7 +1,7 @@
-import styled, { CreateStyledComponentIntrinsic } from "@emotion/styled";
+import styled from "@emotion/styled";
 import { pixel, grid, display } from "~/lib/util";
 
-export interface BoxProps {
+export type BoxProps = {
   m?: number;
   mt?: number;
   ml?: number;
@@ -24,7 +24,7 @@ export interface BoxProps {
   align?: string;
   items?: string;
   content?: string;
-}
+};
 
 export default styled.div<BoxProps>`
   margin: ${pixel("m")};
