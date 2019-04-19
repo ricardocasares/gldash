@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "name": "gldash",
+  "alias": "gldash.analogic.al",
+  "builds": [{ "src": "package.json", "use": "@now/static-build" }],
+  "routes": [
+    { "src": "/(.*).js", "dest": "$1.js" },
+    { "src": "/(.*).css", "dest": "$1.css" },
+    { "src": ".*", "dest": "index.html" }
+  ]
+}
