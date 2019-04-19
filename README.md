@@ -12,7 +12,7 @@ Go to [https://gldash.analogic.al](https://gldash.analogic.al) and add the `gld-
 ```json
 {
   "key": "your-gitlab-key",
-  "gitlab": "https://gitlab-url",
+  "gitlab": "https://gitlab-url/api/v4",
   "interval": 15000,
   "projects": ["ricardocasares/qotd-svc"]
 }
