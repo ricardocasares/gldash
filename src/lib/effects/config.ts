@@ -3,7 +3,12 @@ import { useEffect, useState } from "react";
 export default () => {
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(true);
-  const [config, setConfig] = useState({ interval: 15000, projects: [] });
+  const [config, setConfig] = useState({
+    key: "",
+    gitlab: "",
+    interval: 15000,
+    projects: []
+  });
 
   useEffect(() => {
     try {
@@ -12,12 +17,10 @@ export default () => {
       setLoading(false);
     } catch (err) {
       console.error(err);
+      setError(true);
       setLoading(false);
-      setError(
-        "There was an error retrieving your configuration, please check it is set and is valid json"
-      );
     }
   }, []);
 
-  return [error, loading, config];
+  return { configError: error, configLoading: loading, config };
 };

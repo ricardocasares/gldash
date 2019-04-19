@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 import { keyframes } from "@emotion/core";
 import { relative } from "../lib/time";
 
-import Box from "./Box";
+import Box, { BoxProps } from "./Box";
 import Time from "./Time";
 import Avatar from "./Avatar";
 
@@ -35,9 +35,13 @@ const frames = keyframes`
   }
 `;
 
+type StyledBoxProps = BoxProps & {
+  status: string;
+};
+
 const StyledBox = styled(Box)`
   color: white;
-  background: ${({ status }) => colors[status]};
+  background: ${({ status }: StyledBoxProps) => colors[status]};
   background-size: 300% 300%;
   grid-template-columns: 1fr auto;
   animation: ${frames} 10s linear infinite;
@@ -67,7 +71,7 @@ const StyledBox = styled(Box)`
 
 const Job = ({ gitref, status, stage, user, created_at }) => {
   return (
-    <StyledBox grid gap={10} p={15} align="center" status={status}>
+    <StyledBox grid gap={10} p={15} status={status}>
       <Box grid>
         <h2>{stage}</h2>
         <h3>{status}</h3>
