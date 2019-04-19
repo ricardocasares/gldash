@@ -7,7 +7,7 @@
     "start": "parcel src/index.html",
     "build": "parcel build src/index.html",
     "now-build": "parcel build src/index.html",
-    "release": "npx semantic-release",
+    "release": "npx semantic-release@beta",
     "format": "npx prettier --write **/*.{js,jsx,md,json,html}"
   },
   "keywords": [
