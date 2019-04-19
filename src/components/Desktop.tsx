@@ -1,9 +1,9 @@
 import styled from "@emotion/styled";
 
-export const Time = styled.time`
+export const Desktop = styled.div`
   @media (max-width: 1024px) {
     display: none;
   }
 `;
 
-export default Time;
+export default Desktop;

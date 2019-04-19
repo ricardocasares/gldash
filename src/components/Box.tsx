@@ -1,7 +1,32 @@
 import styled from "@emotion/styled";
-import { pixel, grid, display } from "../lib/util";
+import { pixel, grid, display } from "~/lib/util";
 
-export default styled.div`
+export type BoxProps = {
+  m?: number;
+  mt?: number;
+  ml?: number;
+  mb?: number;
+  mr?: number;
+  p?: number;
+  pt?: number;
+  pl?: number;
+  pb?: number;
+  pr?: number;
+  grid?: boolean;
+  flex?: boolean;
+  block?: boolean;
+  inline?: boolean;
+  iblock?: boolean;
+  direction?: string;
+  gap?: number;
+  cols?: number;
+  rows?: number;
+  align?: string;
+  items?: string;
+  content?: string;
+};
+
+export default styled.div<BoxProps>`
   margin: ${pixel("m")};
   margin-top: ${pixel("mt")};
   margin-left: ${pixel("ml")};

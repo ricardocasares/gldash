@@ -2,7 +2,7 @@ import React from "react";
 import styled from "@emotion/styled";
 import useGitLab from "../lib/effects/gitlab";
 import useInterval from "../lib/effects/interval";
-import Box from "./Box";
+import Box, { BoxProps } from "./Box";
 import Job from "./Job";
 
 const Header = styled.h2`
@@ -13,7 +13,7 @@ const Header = styled.h2`
   white-space: nowrap;
 `;
 
-const StyledBox = styled(Box)`
+const StyledBox = styled(Box)<BoxProps>`
   grid-template-rows: ${({ rows }) => `auto repeat(${rows}, 1fr)`};
 `;
 

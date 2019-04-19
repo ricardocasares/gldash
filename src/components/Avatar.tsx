@@ -1,6 +1,5 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 import styled from "@emotion/styled";
-import Box from "./Box";
 
 const Img = styled.img`
   width: 48px;
@@ -11,7 +10,9 @@ const Img = styled.img`
   background-clip: padding-box;
 `;
 
-const Avatar = ({ username, avatar_url }) => (
+export type AvatarProps = { username: string; avatar_url: string };
+
+const Avatar: FunctionComponent<AvatarProps> = ({ username, avatar_url }) => (
   <Img src={avatar_url} alt={username} />
 );
 
