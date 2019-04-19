@@ -30,6 +30,13 @@ Your key is stored in your browser, we never read it.
 
 Yes.
 
+## @todo
+
+- [x] Release initial version
+- [ ] Better error handling
+- [ ] Configuration page to change settings
+- [ ] Testing
+
 ## Contributing
 
 Feel free to open an issue, pull requests are preferred.
