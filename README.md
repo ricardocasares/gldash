@@ -7,7 +7,7 @@ GitLab Jobs dashboard
 
 ## Usage
 
-Go to [https://gldash.analogic.al] and add the `gld-config` key to your browser's localStorage
+Go to [https://gldash.analogic.al](https://gldash.analogic.al) and add the `gld-config` key to your browser's localStorage
 
 ```json
 {
