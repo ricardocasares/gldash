@@ -24,7 +24,7 @@
   "license": "MIT",
   "dependencies": {
     "@emotion/core": "^10.0.17",
-    "@emotion/styled": "^10.0.14",
+    "@emotion/styled": "^10.0.17",
     "react": "^16.9.0",
     "react-dom": "^16.10.1",
     "s-ago": "^2.1.0"
