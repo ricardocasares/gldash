@@ -26,7 +26,7 @@
     "@emotion/core": "^10.0.22",
     "@emotion/styled": "^10.0.17",
     "react": "^16.10.1",
-    "react-dom": "^16.10.1",
+    "react-dom": "^16.11.0",
     "s-ago": "^2.1.0"
   },
   "devDependencies": {
