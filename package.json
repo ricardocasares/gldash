@@ -23,7 +23,7 @@
   "author": "Ricardo Casares (https://analogic.al)",
   "license": "MIT",
   "dependencies": {
-    "@emotion/core": "^10.0.27",
+    "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
